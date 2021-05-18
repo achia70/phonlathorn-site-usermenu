@@ -1,11 +1,6 @@
 <?php
 /**
  * Add a link to user's personal sandbox to personal tools menu.
- *
- * https://www.mediawiki.org/wiki/Extension:SandboxLink
- *
- * @file
- * @license MIT
  */
 
 class SandboxLinkHooks {
