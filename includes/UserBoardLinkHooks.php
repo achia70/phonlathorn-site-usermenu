@@ -34,25 +34,9 @@ class UserBoardLinkHooks {
 			return null;
 		}
 
-		/*if ( $title->exists() && $title->isRedirect() ) {
-			$href = $title->getLocalURL( [ 'redirect' => 'no' ] );
-		} elseif ( $title->exists() ) {
+		if ( $title->exists() ) {
 			$href = $title->getLocalURL();
-		} else {
-			$query = [ 'action' => 'edit', 'redlink' => '1' ];
-
-			$editintroMsg = $skin->msg( 'sandboxlink-editintro-pagename' )->inContentLanguage();
-			if ( !$editintroMsg->isDisabled() ) {
-				$query['editintro'] = $editintroMsg->plain();
-			}
-
-			$preloadMsg = $skin->msg( 'sandboxlink-preload-pagename' )->inContentLanguage();
-			if ( !$preloadMsg->isDisabled() ) {
-				$query['preload'] = $preloadMsg->plain();
-			}
-
-			$href = $title->getLocalURL( $query );
-		}*/
+		}
 
 		return [
 			'id' => 'pt-userboard',
