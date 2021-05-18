@@ -13,18 +13,24 @@
 		]
 	},
 	"AutoloadClasses": {
-		"SandboxLinkHooks": "includes/SandboxLinkHooks.php"
+		"SandboxLinkHooks": "includes/SandboxLinkHooks.php",
+		"UserBoardLinkHooks": "includes/UserBoardLinkHooks.php"
 	},
 	"Hooks": {
 		"SkinPreloadExistence": [
-			"SandboxLinkHooks::onSkinPreloadExistence"
+			"SandboxLinkHooks::onSkinPreloadExistence",
+			"UserBoardLinkHooks::onSkinPreloadExistence"
 		],
 		"PersonalUrls": [
-			"SandboxLinkHooks::onPersonalUrls"
+			"SandboxLinkHooks::onPersonalUrls",
+			"UserBoardLinkHooks::onPersonalUrls"
 		]
 	},
 	"config": {
 		"SandboxLinkDisableAnon": {
+			"value": true
+		},
+		"UserBoardLinkDisableAnon": {
 			"value": true
 		}
 	},
